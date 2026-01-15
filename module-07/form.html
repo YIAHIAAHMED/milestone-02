@@ -16,9 +16,16 @@
          .login-form{
             display: flex;
             flex-direction: column;
+            width: 50%;
          }
          .login-form input{
             margin-top: 20px;
+         }
+         .login-section{
+            display: flex;
+            justify-content: center;
+            border: 1px solid red;
+            height: 30vh;
          }
     </style>
 </head>
@@ -33,12 +40,14 @@
         
         <a href="">login</a>
     </nav>
-    <form class="login-form">
+    <section class="login-section">
+        <form class="login-form">
         <h3>Please Login</h3>
-        <input type="email" name="" id="" placeholder="Your Email">
-        <input type="password" name="" id="" placeholder="Your Password">
+        <input type="email" name="" id="" placeholder="Your Email" required>
+        <input type="password" name="" id="" placeholder="Your Password" required>
         <input type="submit" value="Login">
     </form> 
+    </section>
     
 </body>
 </html>
